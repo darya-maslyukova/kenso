@@ -1,0 +1,25 @@
+mixin post(image, text, author, date, tags)
+
+    .blog-post
+        .blog-post__images
+            .blog-post__image(style="background-image: url('../pictures/" + image + ".png')")
+
+        .blog-post__article
+            a(href="#").blog-post__title= text
+            .blog-post__info
+                |
+                |
+                span.info-author= author
+                |
+                |
+                span.info-date= "| " + date
+                nav.info-tags
+                  - const arr = tags
+
+                      each val, index in arr
+                          a(href="#")= val
+                          if index !== arr.length - 1
+                              | ,
+                .info-comments
+                    i.icon.icon--comment
+                    | 0

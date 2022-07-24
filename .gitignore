@@ -1,0 +1,22 @@
+# Ignore everything
+*
+!*/
+
+# But not these files in the root
+!/.gitignore
+!/README.md
+
+# But not src folder in the root (for frontend developing)
+!/src/**/*
+!/dist/**/*
+
+# But not gulpfile.js, package.json everywhere in the project
+!gulpfile.js
+!package.json
+
+
+# But ignore node packages everywhere inside the project
+node_modules/
+/.DS_Store
+.idea/
+/dist/mixins/

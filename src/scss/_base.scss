@@ -1,0 +1,64 @@
+//----- Icons
+
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  &.icon--attention {
+    background-image: url("../images/attention.svg");
+    width: 22px;
+    height: 19px;
+  }
+
+}
+
+//----- Buttons
+
+.btn {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: $apple;
+  height: 40px;
+  border-radius: 30px;
+  border: 1px solid $apple;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 20px;
+  transition: 200ms ease-in-out;
+
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+//------- Inputs
+
+input[type="text"],
+input[type="search"] {
+  border: 1px solid $iron;
+  border-radius: 4px;
+  padding: 21px 20px;
+  font-weight: 300;
+  font-size: 18px;
+  height: 59px;
+
+  &::placeholder {
+    font-weight: 300;
+    font-size: 18px;
+    color: $tuna;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
