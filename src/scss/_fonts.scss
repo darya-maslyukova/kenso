@@ -1,1 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;900&display=swap');
+
+@font-face {
+  font-family: 'IvyMode';
+  src: url('../fonts/IvyMode-Thin.eot');
+  src: url('../fonts/IvyMode-Thin.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/IvyMode-Thin.woff2') format('woff2'),
+  url('../fonts/IvyMode-Thin.woff') format('woff'),
+  url('../fonts/IvyMode-Thin.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}

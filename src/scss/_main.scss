@@ -16,7 +16,7 @@ html {
 body {
   font-size: 1rem;
   font-family: $f-primary;
-  color: $charade;
+  color: $ebony;
   background-color: $white;
 }
 
@@ -24,7 +24,7 @@ body {
 a {
   transition: 300ms ease-out;
   text-decoration: none;
-  color: $tuna;
+  color: $ebony;
 
   &:hover {
     color: inherit;
@@ -36,8 +36,26 @@ a {
   min-height: -webkit-calc(100vh - 650px);
   min-height: -moz-calc(100vh - 650px);
   min-height: calc(100vh - 650px);
+  padding-left: 124px;
 }
 
 img {
   max-width: 100%;
+}
+
+h2 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 66px;
+  text-transform: uppercase;
+}
+
+.left-menu {
+  background: $black;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 124px;
 }

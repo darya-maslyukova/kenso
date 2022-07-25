@@ -5,19 +5,56 @@ html(lang="en")
         title Kenso
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="libs/owlCarousel2/owl.carousel.min.css")
+        link(rel="stylesheet", href="libs/owlCarousel2/owl.theme.default.min.css")
+        link(rel="stylesheet", href="libs/animate.min.css")
         link(rel="stylesheet", href="css/core.min.css")
     body
         .wrapper
-
-            .container
+                .left-menu
                 // Header
                 header.header
                 // End Header
 
-                main.blog
+                main.services
+
+                    .services-slider
+                        .services-slider-number 01
+                        .owl-carousel
+                            .services-slider__slide
+                                .services-slider__info
+                                    .services-slider__info__category Ремонт
+                                    h2.services-slider__info__title Ванная комната
+                                    .services-slider__info__text
+                                        p Краткое описание проекта.
+                                        p Мы выполняем ремонты любой сложности по готовому чертежу, при этом максимально придерживаясь проекта. Все работы проводятся по принципу «открытого чека» — с предоставлением всех счетов, без накруток и изменения цен.
+                                .services-slider__img
+                                    img(src="pictures/home-1.jpg" alt="Bathroom")
+
+                            .services-slider__slide
+                                .services-slider__info
+                                    .services-slider__info__category Строительство
+                                    h2.services-slider__info__title Загородный Дом
+                                    .services-slider__info__text
+                                        p Краткое описание проекта.
+                                        p Мы выполняем ремонты любой сложности по готовому чертежу, при этом максимально придерживаясь проекта. Все работы проводятся по принципу «открытого чека» — с предоставлением всех счетов, без накруток и изменения цен.
+                                .services-slider__img
+                                    img(src="pictures/home-2.jpg" alt="Villa")
+
+                        .services-slider-next
+                            .services-slider-next__img
+                            .services-slider-next__info
+                                .services-slider-next__info__top Следующий проект
+                                .services-slider-next__info__title
+
+                    .contact-form
+
 
         footer.footer
                 .container
 
         block scripts
+            script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js' integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer")
+            script(src='libs/owlCarousel2/owl.carousel.min.js')
             script(src='js/main.min.js')
+

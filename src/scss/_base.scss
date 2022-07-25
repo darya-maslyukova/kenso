@@ -7,10 +7,16 @@
   background-size: contain;
   background-position: center;
 
-  &.icon--attention {
-    background-image: url("../images/attention.svg");
-    width: 22px;
-    height: 19px;
+  &.icon--next {
+    background-image: url("../images/arrow-next.svg");
+    width: 69px;
+    height: 51px;
+  }
+
+  &.icon--prev {
+    background-image: url("../images/arrow-prev.svg");
+    width: 69px;
+    height: 51px;
   }
 
 }
@@ -24,10 +30,8 @@
   text-align: center;
   letter-spacing: 0.8px;
   text-transform: uppercase;
-  color: $apple;
   height: 40px;
   border-radius: 30px;
-  border: 1px solid $apple;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -45,7 +49,7 @@
 
 input[type="text"],
 input[type="search"] {
-  border: 1px solid $iron;
+  border: 1px solid $black;
   border-radius: 4px;
   padding: 21px 20px;
   font-weight: 300;
@@ -55,7 +59,7 @@ input[type="search"] {
   &::placeholder {
     font-weight: 300;
     font-size: 18px;
-    color: $tuna;
+    color: $black;
   }
 
   &:focus {
