@@ -37,6 +37,10 @@ a {
   min-height: -moz-calc(100vh - 650px);
   min-height: calc(100vh - 650px);
   padding-left: 124px;
+
+  @include media-breakpoint-down(lg) {
+    padding-left: 0;
+  }
 }
 
 img {
@@ -49,6 +53,11 @@ h2 {
   font-size: 54px;
   line-height: 66px;
   text-transform: uppercase;
+
+  @include media-breakpoint-down(md) {
+    font-size: 36px;
+    line-height: 45px;
+  }
 }
 
 .left-menu {
@@ -58,6 +67,10 @@ h2 {
   top: 0;
   height: 100vh;
   width: 124px;
+
+  @include media-breakpoint-down(lg) {
+    display: none;
+  }
 }
 
 .container {
