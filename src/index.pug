@@ -11,43 +11,58 @@ html(lang="en")
         link(rel="stylesheet", href="css/core.min.css")
     body
         .wrapper
-                .left-menu
-                // Header
-                header.header
-                // End Header
+            .left-menu
+            // Header
+            header.header
+            // End Header
 
-                main.services
+            main.services
 
-                    .services-slider
-                        .services-slider-number 01
-                        .owl-carousel
-                            .services-slider__slide
-                                .services-slider__info
-                                    .services-slider__info__category Ремонт
-                                    h2.services-slider__info__title Ванная комната
-                                    .services-slider__info__text
-                                        p Краткое описание проекта.
-                                        p Мы выполняем ремонты любой сложности по готовому чертежу, при этом максимально придерживаясь проекта. Все работы проводятся по принципу «открытого чека» — с предоставлением всех счетов, без накруток и изменения цен.
-                                .services-slider__img
-                                    img(src="pictures/home-1.jpg" alt="Bathroom")
+                .services-slider
+                    .services-slider-number 01
+                    .owl-carousel
+                        .services-slider__slide
+                            .services-slider__info
+                                .services-slider__info__category Ремонт
+                                h2.services-slider__info__title Ванная комната
+                                .services-slider__info__text
+                                    p Краткое описание проекта.
+                                    p Мы выполняем ремонты любой сложности по готовому чертежу, при этом максимально придерживаясь проекта. Все работы проводятся по принципу «открытого чека» — с предоставлением всех счетов, без накруток и изменения цен.
+                            .services-slider__img
+                                img(src="pictures/home-1.jpg" alt="Bathroom")
 
-                            .services-slider__slide
-                                .services-slider__info
-                                    .services-slider__info__category Строительство
-                                    h2.services-slider__info__title Загородный Дом
-                                    .services-slider__info__text
-                                        p Краткое описание проекта.
-                                        p Мы выполняем ремонты любой сложности по готовому чертежу, при этом максимально придерживаясь проекта. Все работы проводятся по принципу «открытого чека» — с предоставлением всех счетов, без накруток и изменения цен.
-                                .services-slider__img
-                                    img(src="pictures/home-2.jpg" alt="Villa")
+                        .services-slider__slide
+                            .services-slider__info
+                                .services-slider__info__category Строительство
+                                h2.services-slider__info__title Загородный Дом
+                                .services-slider__info__text
+                                    p Краткое описание проекта.
+                                    p Мы выполняем ремонты любой сложности по готовому чертежу, при этом максимально придерживаясь проекта. Все работы проводятся по принципу «открытого чека» — с предоставлением всех счетов, без накруток и изменения цен.
+                            .services-slider__img
+                                img(src="pictures/home-2.jpg" alt="Villa")
 
-                        .services-slider-next
-                            .services-slider-next__img
-                            .services-slider-next__info
-                                .services-slider-next__info__top Следующий проект
-                                .services-slider-next__info__title
+                    .services-slider-next
+                        .services-slider-next__img
+                        .services-slider-next__info
+                            .services-slider-next__info__top Следующий проект
+                            .services-slider-next__info__title
 
-                    .contact-form
+                .contact-form
+                    .container
+                        .contact-form__info
+                            p Сделайте шаг к созданию дома вашей мечты.
+                            | Позвоните нам или оставьте номер телефона и мы обсудим все ваши пожелания.
+                        form.contact-form__form
+                            .contact-form__form__container
+                                input(type="text", placeholder="Имя")
+                                input(type="phone", placeholder="Телефон")
+                                select(name="form-select-job")
+                                    option(value="non-select", selected) Вид работы
+                                    option(value='Робота 1') Робота 1
+                                    option(value='Робота 2') Робота 2
+                                    option(value='Робота 3') Робота 3
+                                button(type="submit").btn.btn--form Отправить
+
 
 
         footer.footer

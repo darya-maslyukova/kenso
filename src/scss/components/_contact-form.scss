@@ -1,0 +1,33 @@
+.contact-form {
+  padding: 129px 0 125px;
+  background: url("../../images/form-bg.png") no-repeat;
+  background-size: cover;
+  color: $white;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 56px;
+  }
+
+  &__form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    &__container {
+      min-width: 520px;
+    }
+  }
+
+  &__info {
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 51px;
+  }
+
+  .btn {
+    margin-top: 15px;
+  }
+}

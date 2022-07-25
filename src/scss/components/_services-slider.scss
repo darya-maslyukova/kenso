@@ -1,7 +1,10 @@
 .services-slider {
-  max-height: 740px;
   position: relative;
   overflow: hidden;
+
+  .owl-carousel {
+    max-height: 740px;
+  }
 
   &__slide {
     display: flex;
@@ -64,6 +67,7 @@
   .owl-nav {
     position: absolute;
     width: calc(100% - 577px);
+    height: 51px;
     top: 0;
     bottom: 0;
     right: 0;
